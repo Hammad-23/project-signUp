@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.13.2/firebase-analytics.js"></script>
+
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAp5Ts5n12-NrZPL8_j8EfDq4gahRa2rQ",
+    authDomain: "log-in-8a59c.firebaseapp.com",
+    databaseURL: "https://log-in-8a59c.firebaseio.com",
+    projectId: "log-in-8a59c",
+    storageBucket: "log-in-8a59c.appspot.com",
+    messagingSenderId: "971839126181",
+    appId: "1:971839126181:web:dec5abb0ca796e5d972b4c",
+    measurementId: "G-DQRTDW92VX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <style>
+        body{
+            background-image: url(assets/images/constant.jpg);
+            
+            
+        }
+        
+        /* .back{
+          background-color: black ;
+          border: solid;
+          color: white;
+        } */
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div class="card text-white bg-dark mb-3 row" style="max-width: 18rem; margin: 200px; font-family: sans-serif; ">
+    <div class="card-header col-sm-12"><p>Sign Up</p> 
+      <p>Fill in the form below to get instant access</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"><input id="firstName" class="form-control" type="text" placeholder="first name" required/></h5>
+      <h5 class="card-title"><input id="lastName" class="form-control" type="text" placeholder="last name" required/></h5>
+      <h5 class="card-title"><input id="email" class="form-control" type="text" placeholder="email" required/></h5>
+      <h5 class="card-title"><input id="password" class="form-control" type="password" placeholder="password" required/>
+      </h5>
+      <button onclick="add()"  class="btn btn-primary">Sign Up me!</button>
+      <p class="card-text">By registering to our website using this form.</p>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
